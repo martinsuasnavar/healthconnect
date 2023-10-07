@@ -2,4 +2,34 @@
 /*CSS*/
 /*///*/
 
+*{
+    color: black;
+}
 
+/*classes*/
+
+.logo{
+    text-align: center;
+}
+
+
+
+.big-title-text{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title-text{
+    font-size: 2rem;
+}
+
+.article-center{
+    text-align: center;
+}
+
+#contents{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 30, 37);
+    background-image: url("../../public/images/laptop-fade-in-white-background.png");
+}
