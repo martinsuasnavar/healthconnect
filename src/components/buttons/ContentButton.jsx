@@ -2,7 +2,7 @@ import "./ContentButton.css";
 
 const ContentButton = ({buttonText}, {pathTarget}) =>{
     return(
-        <a className="content-button">
+        <a href={pathTarget} className="content-button">
             {buttonText}
         </a>
     );

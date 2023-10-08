@@ -5,3 +5,11 @@
     padding: 10px;
     border-radius: 3px;
 }
+
+.content-button:hover{
+    color: grey;
+}
+
+.content-button:active{
+    color: red;
+}

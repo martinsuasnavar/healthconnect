@@ -24,38 +24,76 @@ const Home = () =>{
             </aside>
 
             <div id="contents">
-            <WhiteSpace height="50"/>
-            
-                <section>
+           
+                
+                <section className="section-light-filter">
+                <div className="line-separator"></div>
+                <WhiteSpace height="50"/>
                     <article className="article-center">
-                        <MyVideo src="/videos/health-stock-video.p4" width="500" height="500"/>
+                         <div className="big-title-text">Who we are?</div>
+                         <WhiteSpace height="50"/>
+                        <MyVideo src="/videos/health-stock-video.mp4" width="780"/>
+      
                     </article>
-                </section> 
-
+               
                     <WhiteSpace height="50"/>
                     <article className="article-center">
                         <div className="title-text">Our mission</div>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, aperiam ab? Magni et amet quibusdam reiciendis necessitatibus, ipsum ullam libero officiis veniam dicta tempora quasi nemo porro nisi vero eius?
+                        HealthConnect Innovations is a forward-thinking private company dedicated to transforming the healthcare landscape through cutting-edge telemedicine solutions. Our mission is to provide accessible, convenient, and high-quality healthcare services to individuals and healthcare providers.
                     </article>
+                
+                
+                    <WhiteSpace height="50"/>
+                </section> 
+                <section> 
+                <div className="line-separator"></div>
+                    <WhiteSpace height="50"/>
+                    <article className="article-center">
+                        <div className="title-text">Variety is essential</div>
+                        <br></br>
+                        <ContentButton buttonText="Check our services"/>
+                    </article>
+                    
+                </section>
+
                 <section> 
 
+                
                     <WhiteSpace height="50"/>
                     <article className="article-center">
-                        <ContentButton buttonText="Check pricing and plans"/>
+                    <div className="title-text">We can get you started</div>
+                    <br></br>
+                        <ContentButton buttonText={"Contact us"} pathTarget={"/plans"}/>
                     </article>
-
-                    <WhiteSpace height="50"/>
-                    <article className="article-center">
-                        <div className="title-text">Common questions</div>
-                        <br></br>
-                        <ContentButton buttonText="FAQs"/>
-                    </article>
-
-                    <WhiteSpace height="50"/>
                 </section>
+                <section> 
+
+                
+                    <WhiteSpace height="50"/>
+                    <article className="article-center">
+                    <div className="title-text">Need guide about billings?</div>
+                    <br></br>
+                        <ContentButton buttonText={"Check pricing and plans"} pathTarget={"/plans"}/>
+                    </article>
+                
+                </section>
+                <section> 
+
+
+
+                    <WhiteSpace height="50"/>
+                    <article className="article-center">
+                        <div className="title-text">If you have a doubt, we are happy to answer you</div>
+                        <br></br>
+                        <ContentButton buttonText="Common questions"/>
+                    </article>
+                </section>
+
+
+                    <WhiteSpace height="50"/>
             </div>
         </div>
-
+        <div className="line-separator"></div>
         <footer>
             <Footer />
         </footer>
