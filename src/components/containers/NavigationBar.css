@@ -1,7 +1,7 @@
 #navigation_bar{
     position: fixed;
     top: 0;
-    height: 20px;
+    height: 40px;
     width: 100%;
     background-color: white;
     background-position: bottom;
@@ -13,9 +13,23 @@
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.separator {
+    color: #333; /* Match the color of your text */
+   margin-left: 1px;
+}
 
 .nav-button{
     color: black;
+}
+
+.nav-logo{
+    width: 50px;
+}
+
+@media (max-width: 1000px){
+    .nav-logo{
+        display: none;
+   }
 }
 
 .nav-button:hover{
@@ -30,11 +44,20 @@ ul{
 }
 
 li{
+    margin-top: 10px;
     text-decoration: none;
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
 }
 
+@media (max-width: 1000px){
+    li{
+        margin-right: 5px;
+        margin-left: 5px;
+   }
+}
 
 .left{
     float: left;

@@ -1,8 +1,18 @@
 import "./ContentButton.css";
 
 const ContentButton = ({buttonText}, {pathTarget}) =>{
+    const defaultPathData = {
+        href: "#",
+    };
+    
+    const pathData = {
+        ...defaultPathData,
+        href: pathTarget !== undefined ? {pathTarget} : defaultPathData.href,
+    };
+    
+
     return(
-        <a href={pathTarget} className="content-button">
+        <a href={pathData.href} className="content-button">
             {buttonText}
         </a>
     );

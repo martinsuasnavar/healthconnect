@@ -1,5 +1,5 @@
 import HomeFacade from "../components/containers/HomeFacade";
-import { WhiteSpace, MyImage } from "../components/supports";
+import { WhiteSpace, LineSeparator, MyImage } from "../components/supports";
 import MyVideo from "../components/supports/MyVideo";
 import ContentButton from "../components/buttons/ContentButton";
 import Footer from "../components/containers/Footer";
@@ -27,7 +27,7 @@ const Home = () =>{
            
                 
                 <section className="section-light-filter">
-                <div className="line-separator"></div>
+                <LineSeparator/>
                 <WhiteSpace height="50"/>
                     <article className="article-center">
                          <div className="big-title-text">Who we are?</div>
@@ -46,7 +46,7 @@ const Home = () =>{
                     <WhiteSpace height="50"/>
                 </section> 
                 <section> 
-                <div className="line-separator"></div>
+                <LineSeparator/>
                     <WhiteSpace height="50"/>
                     <article className="article-center">
                         <div className="title-text">Variety is essential</div>
@@ -71,7 +71,7 @@ const Home = () =>{
                 
                     <WhiteSpace height="50"/>
                     <article className="article-center">
-                    <div className="title-text">Need guide about billings?</div>
+                    <div className="title-text">Get your chance</div>
                     <br></br>
                         <ContentButton buttonText={"Check pricing and plans"} pathTarget={"/plans"}/>
                     </article>
@@ -83,7 +83,7 @@ const Home = () =>{
 
                     <WhiteSpace height="50"/>
                     <article className="article-center">
-                        <div className="title-text">If you have a doubt, we are happy to answer you</div>
+                        <div className="title-text">We are happy to answer you</div>
                         <br></br>
                         <ContentButton buttonText="Common questions"/>
                     </article>
@@ -93,7 +93,7 @@ const Home = () =>{
                     <WhiteSpace height="50"/>
             </div>
         </div>
-        <div className="line-separator"></div>
+        <LineSeparator/>
         <footer>
             <Footer />
         </footer>

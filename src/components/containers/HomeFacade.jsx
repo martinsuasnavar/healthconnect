@@ -18,8 +18,8 @@ const HomeFacade = () => {
 
     return(
         <div className="home-facade" style={{ backgroundPositionY: `${offset * -0.2}px` }}>
-                <div className="logo">
-                    <MyImage width="750" src="/images/health-connect-full-logo-alt.png"/>
+            <div className="logo">
+                <MyImage width="400" src="/images/health-connect-logo.png"/>
             </div>
         </div>
     );
