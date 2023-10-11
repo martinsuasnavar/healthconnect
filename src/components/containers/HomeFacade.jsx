@@ -1,6 +1,6 @@
 import React, { useEffect, useState  } from 'react';
 import { MyImage } from "../supports";
-import "./HomeFacade.css";
+import "./HomeFacade.scss";
 
 const HomeFacade = () => {
     const [offset, setOffset] = useState(0);

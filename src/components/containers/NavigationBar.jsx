@@ -1,6 +1,6 @@
-import "./NavigationBar.css";
+import "./NavigationBar.scss";
 import { Link } from 'react-router-dom';
-import "../../styles/main.css";
+import "../../styles/shared.scss";
 import { WhiteSpace, MyImage } from "../supports";
 
 const NavigationBar = () => {

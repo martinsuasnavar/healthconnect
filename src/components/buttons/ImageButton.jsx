@@ -1,6 +1,4 @@
-import { MyImage } from "../supports";
-
-const ImageButton = ({imgSrc}, {imgWidth}, {imgHeight}, {pathTarget}) =>{
+const ImageButton = ({imgSrc, imgWidth, imgHeight, pathTarget}) =>{
     const defaultPathData = {
         href: "#",
     };
@@ -12,9 +10,8 @@ const ImageButton = ({imgSrc}, {imgWidth}, {imgHeight}, {pathTarget}) =>{
     
 
     return(
-        <MyImage width={imgWidth} height={imgHeight} href={pathData.href} className="image-button">
-            {buttonText}
-        </MyImage>
+        <img href={pathData.href} src={imgSrc} width={imgWidth} height={imgHeight} className="image-button">         
+        </img>
     );
 }
 

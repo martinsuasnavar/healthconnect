@@ -1,4 +1,4 @@
-import "./ContentButton.css";
+import "./ContentButton.scss";
 
 const ContentButton = ({buttonText}, {pathTarget}) =>{
     const defaultPathData = {

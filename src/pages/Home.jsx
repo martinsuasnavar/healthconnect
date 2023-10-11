@@ -1,9 +1,9 @@
 import HomeFacade from "../components/containers/HomeFacade";
-import { WhiteSpace, LineSeparator, MyImage } from "../components/supports";
-import MyVideo from "../components/supports/MyVideo";
+import { WhiteSpace, LineSeparator, MyImage, MyVideo } from "../components/supports";
+import Grid from "../components/supports/Grid";
 import ContentButton from "../components/buttons/ContentButton";
 import Footer from "../components/containers/Footer";
-import "../styles/main.css";
+import "../styles/shared.scss";
 
 const Home = () =>{
     return(
@@ -23,7 +23,7 @@ const Home = () =>{
                 </nav>
             </aside>
 
-            <div id="contents">
+            <div id="home_contents">
            
                 
                 <section className="section-light-filter">
@@ -32,7 +32,7 @@ const Home = () =>{
                     <article className="article-center">
                          <div className="big-title-text">Who we are?</div>
                          <WhiteSpace height="50"/>
-                        <MyVideo src="/videos/health-stock-video.mp4" width="780"/>
+                        <MyVideo src="/videos/health-stock-video.mp4" width="280"/>
       
                     </article>
                
@@ -46,51 +46,46 @@ const Home = () =>{
                     <WhiteSpace height="50"/>
                 </section> 
                 <section> 
-                <LineSeparator/>
-                    <WhiteSpace height="50"/>
-                    <article className="article-center">
-                        <div className="title-text">Variety is essential</div>
-                        <br></br>
-                        <ContentButton buttonText="Check our services"/>
-                    </article>
                     
-                </section>
-
-                <section> 
-
-                
-                    <WhiteSpace height="50"/>
-                    <article className="article-center">
-                    <div className="title-text">We can get you started</div>
-                    <br></br>
-                        <ContentButton buttonText={"Contact us"} pathTarget={"/plans"}/>
-                    </article>
-                </section>
-                <section> 
-
-                
-                    <WhiteSpace height="50"/>
-                    <article className="article-center">
-                    <div className="title-text">Get your chance</div>
-                    <br></br>
-                        <ContentButton buttonText={"Check pricing and plans"} pathTarget={"/plans"}/>
-                    </article>
-                
-                </section>
-                <section> 
-
-
+                    <LineSeparator/>
 
                     <WhiteSpace height="50"/>
-                    <article className="article-center">
-                        <div className="title-text">We are happy to answer you</div>
-                        <br></br>
-                        <ContentButton buttonText="Common questions"/>
-                    </article>
+                    <Grid templateColumns={"repeat(2,4fr"} sideMargins={"10px"}>
+                        <div className="grid-item">
+                            <article className="article-center">
+                                <div className="title-text">Variety is essential</div>
+                                <br></br>
+                                <ContentButton buttonText="Check our services"/>
+                            </article>
+                        </div>
+
+                        <div className="grid-item">
+                        <article className="article-center">
+                            <div className="title-text">We can get you started</div>
+                            <br></br>
+                                <ContentButton buttonText={"Contact us"} pathTarget={"/plans"}/>
+                            </article>
+                        </div>
+
+                        <div className="grid-item">
+                            <article className="article-center">
+                            <div className="title-text">Get your chance</div>
+                            <br></br>
+                                <ContentButton buttonText={"Check pricing and plans"} pathTarget={"/plans"}/>
+                            </article>
+                        </div>
+
+                        <div className="grid-item">
+                            <article className="article-center">
+                                <div className="title-text">We are happy to answer you</div>
+                                <br></br>
+                                <ContentButton buttonText="Common questions"/>
+                            </article>
+                        </div>
+                    </Grid>
                 </section>
 
-
-                    <WhiteSpace height="50"/>
+                <WhiteSpace height="50"/>
             </div>
         </div>
         <LineSeparator/>

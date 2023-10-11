@@ -1,5 +1,5 @@
 import React from 'react';
-import "./MyVideo.css"
+import "./MyVideo.scss"
 
 const MyVideo = ({src, width, height}) => {
     return(
