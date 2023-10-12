@@ -1,4 +1,4 @@
-import { WhiteSpace, LineSeparator } from "../components/supports";
+import { WhiteSpace, LineSeparator, Grid } from "../components/supports";
 import Footer from "../components/containers/Footer";
 
 const Contact = ()=>{
@@ -24,8 +24,41 @@ const Contact = ()=>{
                             <div className="big-title-text">Contact us</div>
                         </article>
                     </section>
+                    <WhiteSpace height="50"/>
 
-                    <WhiteSpace height="950"/>
+                    <section> 
+                        <article className="article-center">
+                            <div className="title-text">Contact methods</div>
+                            <Grid templateColumns={"repeat(3,1fr)"}>
+
+                                <div className="grid-item">
+                                    <article className="article-center">
+                                        <div className="title-text">Email</div>
+                                        info@healthconnectinnovations.com
+                                        <WhiteSpace height="20"/>
+                                    </article>
+                                </div>
+
+                                <div className="grid-item">
+                                    <article className="article-center">
+                                        <div className="title-text">Phone</div>
+                                        1-800-HEALTH-CONNECT
+                                        <WhiteSpace height="20"/>
+                                    </article>
+                                </div>
+
+                                <div className="grid-item">
+                                    <article className="article-center">
+                                        <div className="title-text">Mailing Address</div>
+                                        123 Telehealth Avenue, Healthville, USA
+                                        <WhiteSpace height="20"/>
+                                    </article>
+                                </div>
+
+                            </Grid>
+                        </article>
+                    </section>
+                    <WhiteSpace height="100"/>
                 </div>
             </div>
             <LineSeparator/>

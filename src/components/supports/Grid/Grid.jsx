@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Grid.scss"
 
 const Grid = ({children, templateColumns, newGap, sideMargins})=>{
   

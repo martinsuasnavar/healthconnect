@@ -1,9 +1,8 @@
 import HomeFacade from "../components/containers/HomeFacade";
 import { WhiteSpace, LineSeparator, MyImage, MyVideo } from "../components/supports";
-import Grid from "../components/supports/Grid";
+import Grid from "../components/supports/Grid/Grid";
 import ContentButton from "../components/buttons/ContentButton";
 import Footer from "../components/containers/Footer";
-import "../styles/shared.scss";
 
 const Home = () =>{
     return(
@@ -40,6 +39,8 @@ const Home = () =>{
                     <article className="article-center">
                         <div className="title-text">Our mission</div>
                         HealthConnect Innovations is a forward-thinking private company dedicated to transforming the healthcare landscape through cutting-edge telemedicine solutions. Our mission is to provide accessible, convenient, and high-quality healthcare services to individuals and healthcare providers.
+                        <WhiteSpace height="50"/>
+                        <ContentButton buttonText="More about us" pathTarget={"/about"}/>
                     </article>
                 
                 
@@ -53,33 +54,33 @@ const Home = () =>{
                     <Grid templateColumns={"repeat(2,4fr"} sideMargins={"10px"}>
                         <div className="grid-item">
                             <article className="article-center">
-                                <div className="title-text">Variety is essential</div>
+                                <div className="title-text">Modern solutions for telemedicine</div>
                                 <br></br>
-                                <ContentButton buttonText="Check our services"/>
+                                <ContentButton buttonText="Services" pathTarget={"/services"}/>
                             </article>
                         </div>
 
                         <div className="grid-item">
                         <article className="article-center">
-                            <div className="title-text">We can get you started</div>
+                            <div className="title-text">Getting you started</div>
                             <br></br>
-                                <ContentButton buttonText={"Contact us"} pathTarget={"/plans"}/>
+                                <ContentButton buttonText={"Contact"} pathTarget={"/contact"}/>
                             </article>
                         </div>
 
                         <div className="grid-item">
                             <article className="article-center">
-                            <div className="title-text">Get your chance</div>
+                            <div className="title-text">Different plans for different needs</div>
                             <br></br>
-                                <ContentButton buttonText={"Check pricing and plans"} pathTarget={"/plans"}/>
+                                <ContentButton buttonText={"Pricings"} pathTarget={"/plans"}/>
                             </article>
                         </div>
 
                         <div className="grid-item">
                             <article className="article-center">
-                                <div className="title-text">We are happy to answer you</div>
+                                <div className="title-text">Your doubt might be reflected here</div>
                                 <br></br>
-                                <ContentButton buttonText="Common questions"/>
+                                <ContentButton buttonText="Common questions" pathTarget={"/faqs"}/>
                             </article>
                         </div>
                     </Grid>

@@ -11,7 +11,7 @@ const Footer = () =>{
                 <li className="left">
 
                 <div className="footer-column">HealthConnect Innovations, Inc</div>
-                <div className="footer-column">Since 2010</div>
+                <div className="footer-column">© 2010 - 2023</div>
 
                 </li>
                 
@@ -19,7 +19,7 @@ const Footer = () =>{
 
                 <div className="footer-column">Follow us</div>
                 <div className="footer-column">
-                    <ImageButton pathTarget="#" imgSrc="/images/facebook-logo-black.png" imgWidth={buttonSize}/>
+                    <ImageButton imgSrc="/images/facebook-logo-black.png" imgWidth={buttonSize}/>
                     <WhiteSpace width={buttonWhiteSpaceSize}/>
                     <ImageButton imgSrc="/images/twitter-logo-black.png" imgWidth={buttonSize}/>
                     <WhiteSpace width={buttonWhiteSpaceSize}/>

@@ -1,13 +1,13 @@
 import "./ContentButton.scss";
 
-const ContentButton = ({buttonText}, {pathTarget}) =>{
+const ContentButton = ({buttonText, pathTarget}) =>{
     const defaultPathData = {
         href: "#",
     };
     
     const pathData = {
         ...defaultPathData,
-        href: pathTarget !== undefined ? {pathTarget} : defaultPathData.href,
+        href: pathTarget !== undefined ? pathTarget : defaultPathData.href,
     };
     
 

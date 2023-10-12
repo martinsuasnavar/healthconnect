@@ -1,6 +1,6 @@
 import {  BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, AboutUs, Services, Plans, FAQs, Contact } from './pages';
-import './App.css';
+import "./styles/shared.scss";
 import NavigationBar from './components/containers/NavigationBar';
 
 function App() {

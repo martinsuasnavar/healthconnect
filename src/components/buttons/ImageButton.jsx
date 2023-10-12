@@ -5,13 +5,14 @@ const ImageButton = ({imgSrc, imgWidth, imgHeight, pathTarget}) =>{
     
     const pathData = {
         ...defaultPathData,
-        href: pathTarget !== undefined ? {pathTarget} : defaultPathData.href,
+        href: pathTarget !== undefined ? pathTarget : defaultPathData.href,
     };
     
 
     return(
-        <img href={pathData.href} src={imgSrc} width={imgWidth} height={imgHeight} className="image-button">         
-        </img>
+        <a href={pathData.href} className="image-button">
+            <img src={imgSrc} width={imgWidth} height={imgHeight}></img>
+        </a>
     );
 }
 
